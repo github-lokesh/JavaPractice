@@ -1,0 +1,89 @@
+Set Up Git:
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+
+other commands
+git clone (url)
+git add (file names)
+git commit -m "(committed message)
+git push -u origin master
+git remote add origin master (url)
+
+
+
+LS28889@B2V7PF2 MINGW64 /c
+$ ls -ltr
+total 8202350
+-rw-r--r-- 1 LS28889 1049089       5686 Nov  7  2007 vcredist.bmp
+-rw-r--r-- 1 LS28889 1049089        843 Nov  7  2007 install.ini
+-rw-r--r-- 1 LS28889 1049089       1110 Nov  7  2007 globdata.ini
+-rwxr-xr-x 1 LS28889 1049089      96272 Nov  7  2007 install.res.3082.dll*
+-rwxr-xr-x 1 LS28889 1049089      75792 Nov  7  2007 install.res.2052.dll*
+
+
+LS28889@B2V7PF2 MINGW64 /c
+$
+
+LS28889@B2V7PF2 MINGW64 /c
+$ cd workspace_work/Project
+
+LS28889@B2V7PF2 MINGW64 /c/workspace_work/Project
+$ git config --global user.name "github.lokesh"
+
+LS28889@B2V7PF2 MINGW64 /c/workspace_work/Project
+$ git config --global user.email github.lokesh@gmail.com
+
+LS28889@B2V7PF2 MINGW64 /c/workspace_work/Project
+$ git clone https://github.com/github-lokesh/JavaPractice.git
+Cloning into 'JavaPractice'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+LS28889@B2V7PF2 MINGW64 /c/workspace_work/Project
+$ ls
+bin/  JavaPractice/  src/
+
+LS28889@B2V7PF2 MINGW64 /c/workspace_work/Project
+$ cd JavaPractice/
+
+LS28889@B2V7PF2 MINGW64 /c/workspace_work/Project/JavaPractice (master)
+$ ls
+New.txt  README.md
+
+LS28889@B2V7PF2 MINGW64 /c/workspace_work/Project/JavaPractice (master)
+$ git add New.txt
+
+LS28889@B2V7PF2 MINGW64 /c/workspace_work/Project/JavaPractice (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   New.txt
+
+
+LS28889@B2V7PF2 MINGW64 /c/workspace_work/Project/JavaPractice (master)
+$ git commit -m "This is the first commit" New.txt
+[master 95ab21e] This is the first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 New.txt
+
+LS28889@B2V7PF2 MINGW64 /c/workspace_work/Project/JavaPractice (master)
+$ git push -u origin master
+Fatal: AggregateException encountered.
+Username for 'https://github.com': github.lokesh@gmail.com
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 281 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/github-lokesh/JavaPractice.git
+   8df42bd..95ab21e  master -> master
+Branch master set up to track remote branch master from origin.
+
+LS28889@B2V7PF2 MINGW64 /c/workspace_work/Project/JavaPractice (master)
+$
+
